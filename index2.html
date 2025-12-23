@@ -71,11 +71,17 @@
         .card__cart-btn .cart-icon {
             width: 20px;
             height: 20px;
-            /* Убрал filter: invert(1) - теперь иконка будет нормального цвета */
         }
         
         .card__image {
             position: relative;
+        }
+        
+        /* Стиль для недоступных ссылок */
+        .card__button a {
+            pointer-events: none;
+            opacity: 0.7;
+            text-decoration: line-through;
         }
     </style>
 </head>
@@ -97,7 +103,7 @@
                 <img src="./assets/images/eda1.webp" alt="Брауни" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 1, 'Брауни', 540, './assets/images/eda1.webp', 'Шоколадный десерт с орехами', '180 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -119,7 +125,7 @@
                 <img src="./assets/images/eda2.webp" alt="Сэндвич с пастрами" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 2, 'Сэндвич с пастрами', 710, './assets/images/eda2.webp', 'С говядиной прошутто и сыром', '350 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -130,7 +136,7 @@
                     <div class="card__weight">350 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ_ДЛЯ_СЭНДВИЧА.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -141,7 +147,7 @@
                 <img src="./assets/images/eda3.webp" alt="Мраморные говяжьи ребра" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 3, 'Мраморные говяжьи ребра', 1530, './assets/images/eda3.webp', 'Мраморная говядина на ребре', '800 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -152,7 +158,7 @@
                     <div class="card__weight">800 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ_ДЛЯ_РЕБЕР.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -163,7 +169,7 @@
                 <img src="./assets/images/eda4.webp" alt="Ребра L Сковилл" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 4, 'Ребра L Сковилл', 666, './assets/images/eda4.webp', 'Острые ребра по шкале Сковилла', '400 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -174,7 +180,7 @@
                     <div class="card__weight">400 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -185,7 +191,7 @@
                 <img src="./assets/images/eda5.webp" alt="Ребра L Взрывная кола" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 5, 'Ребра L Взрывная кола', 730, './assets/images/eda5.webp', 'Ребра в соусе из колы и специй', '420 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -196,7 +202,7 @@
                     <div class="card__weight">420 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -207,7 +213,7 @@
                 <img src="./assets/images/eda6.webp" alt="Ребра L Брусничные" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 6, 'Ребра L Брусничные', 710, './assets/images/eda6.webp', 'Ребра с брусничным соусом', '410 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -218,7 +224,7 @@
                     <div class="card__weight">410 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -229,7 +235,7 @@
                 <img src="./assets/images/eda7.webp" alt="Ребра L Пряная груша" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 7, 'Ребра L Пряная груша', 790, './assets/images/eda7.webp', 'Ребра с соусом из пряной груши', '430 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -240,7 +246,7 @@
                     <div class="card__weight">430 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -251,7 +257,7 @@
                 <img src="./assets/images/eda8.webp" alt="Ребра L Терияки-имбирь" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 8, 'Ребра L Терияки-имбирь', 670, './assets/images/eda8.webp', 'Ребра в соусе терияки с имбирем', '400 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -262,7 +268,7 @@
                     <div class="card__weight">400 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -273,7 +279,7 @@
                 <img src="./assets/images/eda9.webp" alt="Крылья чипотл / BBQ" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 9, 'Крылья чипотл / BBQ', 590, './assets/images/eda9.webp', 'Куриные крылья в двух соусах', '500 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -284,7 +290,7 @@
                     <div class="card__weight">500 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -295,7 +301,7 @@
                 <img src="./assets/images/eda10.webp" alt="Fish and Chips" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 10, 'Fish and Chips', 530, './assets/images/eda10.webp', 'Рыба в кляре с картофелем фри', '350 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -306,7 +312,7 @@
                     <div class="card__weight">350 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -317,7 +323,7 @@
                 <img src="./assets/images/eda11.webp" alt="Mac and Cheese" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 11, 'Mac and Cheese', 470, './assets/images/eda11.webp', 'Макароны с сырным соусом', '300 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -328,7 +334,7 @@
                     <div class="card__weight">300 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -339,7 +345,7 @@
                 <img src="./assets/images/eda12.webp" alt="Креветки в пивном кляре" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 12, 'Креветки в пивном кляре', 530, './assets/images/eda12.webp', 'Креветки в пивном кляре с соусом', '250 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -350,7 +356,7 @@
                     <div class="card__weight">250 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -361,7 +367,7 @@
                 <img src="./assets/images/eda13.webp" alt="Куриные байтсы" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 13, 'Куриные байтсы', 460, './assets/images/eda13.webp', 'Куриные наггетсы с соусом', '300 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -372,7 +378,7 @@
                     <div class="card__weight">300 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -383,7 +389,7 @@
                 <img src="./assets/images/eda14.webp" alt="Борщ с ребром" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 14, 'Борщ с ребром', 530, './assets/images/eda14.webp', 'Борщ с говяжьим ребром', '400 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -394,7 +400,7 @@
                     <div class="card__weight">400 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -405,7 +411,7 @@
                 <img src="./assets/images/eda15.webp" alt="Батат фри" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 15, 'Батат фри', 350, './assets/images/eda15.webp', 'Сладкий картофель фри', '250 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -416,7 +422,7 @@
                     <div class="card__weight">250 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -427,7 +433,7 @@
                 <img src="./assets/images/eda16.webp" alt="Джерки сет из 3 видов мяса" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 16, 'Джерки сет из 3 видов мяса', 650, './assets/images/eda16.webp', 'Вяленое мясо трех видов', '200 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -438,7 +444,7 @@
                     <div class="card__weight">200 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -449,7 +455,7 @@
                 <img src="./assets/images/eda17.webp" alt="Американский пирог" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 17, 'Американский пирог', 430, './assets/images/eda17.webp', 'Яблочный пирог по-американски', '200 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -460,7 +466,7 @@
                     <div class="card__weight">200 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -471,7 +477,7 @@
                 <img src="./assets/images/eda18.webp" alt="Чизкейк в горячей карамели" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 18, 'Чизкейк в горячей карамели', 490, './assets/images/eda18.webp', 'Чизкейк с горячей карамелью', '180 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -482,7 +488,7 @@
                     <div class="card__weight">180 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -493,7 +499,7 @@
                 <img src="./assets/images/eda19.webp" alt="Порция ребер" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 19, 'Порция ребер', 630, './assets/images/eda19.webp', 'Стандартная порция свиных ребер', '500 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -504,7 +510,7 @@
                     <div class="card__weight">500 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -515,7 +521,7 @@
                 <img src="./assets/images/eda20.webp" alt="Жареная моцарелла" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 20, 'Жареная моцарелла', 470, './assets/images/eda20.webp', 'Моцарелла в панировке', '200 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -526,7 +532,7 @@
                     <div class="card__weight">200 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -537,7 +543,7 @@
                 <img src="./assets/images/eda21.webp" alt="Ребрабургер" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 21, 'Ребрабургер', 790, './assets/images/eda21.webp', 'Бургер с мясом ребер', '450 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -548,7 +554,7 @@
                     <div class="card__weight">450 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -559,7 +565,7 @@
                 <img src="./assets/images/eda22.webp" alt="Салат со страчателлой" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 22, 'Салат со страчателлой', 640, './assets/images/eda22.webp', 'Салат с сыром страчателла', '300 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -570,7 +576,7 @@
                     <div class="card__weight">300 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -581,7 +587,7 @@
                 <img src="./assets/images/eda23.webp" alt="Салат с цыпленком" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 23, 'Салат с цыпленком', 560, './assets/images/eda23.webp', 'Салат с куриным филе', '320 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -592,7 +598,7 @@
                     <div class="card__weight">320 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -603,7 +609,7 @@
                 <img src="./assets/images/eda24.webp" alt="Зеленый салат" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 24, 'Зеленый салат', 510, './assets/images/eda24.webp', 'Свежий зеленый салат', '250 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -614,7 +620,7 @@
                     <div class="card__weight">250 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -625,7 +631,7 @@
                 <img src="./assets/images/eda25.webp" alt="Салат Коул Слоу" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 25, 'Салат Коул Слоу', 310, './assets/images/eda25.webp', 'Капустный салат по-американски', '200 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -636,7 +642,7 @@
                     <div class="card__weight">200 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -647,7 +653,7 @@
                 <img src="./assets/images/eda26.webp" alt="Любимые огурчики" class="card__img">
                 <button class="card__cart-btn" aria-label="Добавить в корзину" 
                         onclick="addToCartWithNotification(event, 26, 'Любимые огурчики', 310, './assets/images/eda26.webp', 'Маринованные огурчики', '150 г')">
-                    <img src="./assets/images/corzena.webp" alt="Корзина" class="cart-icon">
+                    <i class="fas fa-shopping-cart" style="color: #ED693B; font-size: 18px;"></i>
                 </button>
             </div>
             <div class="card__body">
@@ -658,7 +664,7 @@
                     <div class="card__weight">150 г</div>
                 </div>
                 <button class="card__button">
-                    <a href="ВСТАВЬТЕ_ССЫЛКУ.html">подробнее</a>
+                    <a href="#" onclick="return false;">подробнее</a>
                 </button>
             </div>
         </div>
@@ -668,6 +674,19 @@
     @@include('../components/_footer.html')
 
     <script>
+        // Проверка доступности localStorage
+        function isLocalStorageAvailable() {
+            try {
+                const test = '__test__';
+                localStorage.setItem(test, test);
+                localStorage.removeItem(test);
+                return true;
+            } catch (e) {
+                console.warn('localStorage недоступен. Корзина будет работать в сессии страницы.');
+                return false;
+            }
+        }
+        
         // Функция для показа уведомления
         function showCartNotification(productName) {
             const notification = document.getElementById('cartNotification');
@@ -687,56 +706,84 @@
             }
         }
         
+        // Основная функция добавления в корзину
+        function addToCart(id, name, price, image, description, weight) {
+            const cart = getCart();
+            const existingItemIndex = cart.findIndex(item => item.id === id);
+            
+            if (existingItemIndex > -1) {
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                cart.push({
+                    id: id,
+                    name: name,
+                    price: price,
+                    image: image,
+                    description: description,
+                    weight: weight,
+                    quantity: 1
+                });
+            }
+            
+            saveCart(cart);
+            updateCartCounter();
+            
+            return cart;
+        }
+        
+        // Получить корзину из localStorage
+        function getCart() {
+            if (!isLocalStorageAvailable()) {
+                // Если localStorage недоступен, используем временное хранилище
+                if (!window.tempCart) {
+                    window.tempCart = [];
+                }
+                return window.tempCart;
+            }
+            
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                try {
+                    return JSON.parse(savedCart);
+                } catch (e) {
+                    console.error('Ошибка загрузки корзины:', e);
+                    return [];
+                }
+            }
+            return [];
+        }
+        
+        // Сохранить корзину в localStorage
+        function saveCart(cart) {
+            if (isLocalStorageAvailable()) {
+                localStorage.setItem('cart', JSON.stringify(cart));
+            } else {
+                window.tempCart = cart;
+            }
+        }
+        
+        // Обновить счетчик корзины
+        function updateCartCounter() {
+            const cart = getCart();
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            const cartCountElement = document.getElementById('cartCount');
+            
+            if (cartCountElement) {
+                cartCountElement.textContent = totalItems;
+                cartCountElement.style.display = totalItems > 0 ? 'flex' : 'none';
+            }
+        }
+        
         // Обертка для addToCart с уведомлением
         function addToCartWithNotification(event, id, name, price, image, description, weight) {
-            // Проверяем, определена ли функция addToCart
-            if (typeof addToCart === 'function') {
-                // Передаем event в функцию addToCart
-                window.currentEvent = event;
+            // Предотвращаем всплытие события
+            if (event) {
+                event.stopPropagation();
+            }
+            
+            try {
+                // Добавляем товар в корзину
                 addToCart(id, name, price, image, description, weight);
-                // Показываем уведомление
-                showCartNotification(name);
-            } else {
-                // Если cart.js еще не загружен, пытаемся загрузить корзину вручную
-                console.log('cart.js не загружен, попытка ручного добавления');
-                
-                // Загружаем корзину из localStorage
-                const savedCart = localStorage.getItem('cart');
-                let cart = [];
-                
-                if (savedCart) {
-                    try {
-                        cart = JSON.parse(savedCart);
-                    } catch (e) {
-                        console.error('Ошибка загрузки корзины:', e);
-                        cart = [];
-                    }
-                }
-                
-                // Проверяем, есть ли уже такой товар в корзине
-                const existingItemIndex = cart.findIndex(item => item.id === id);
-                
-                if (existingItemIndex > -1) {
-                    // Увеличиваем количество существующего товара
-                    cart[existingItemIndex].quantity += 1;
-                } else {
-                    // Добавляем новый товар
-                    cart.push({
-                        id: id,
-                        name: name,
-                        price: price,
-                        image: image,
-                        description: description,
-                        weight: weight,
-                        quantity: 1
-                    });
-                }
-                
-                // Сохраняем корзину
-                localStorage.setItem('cart', JSON.stringify(cart));
-                
-                // Обновляем счетчик
-                updateCartCounter();
                 
                 // Показываем уведомление
                 showCartNotification(name);
@@ -749,35 +796,11 @@
                         cartBtn.classList.remove('cart-added');
                     }, 500);
                 }
-            }
-        }
-        
-        // Функция обновления счетчика корзины
-        function updateCartCounter() {
-            const savedCart = localStorage.getItem('cart');
-            let cart = [];
-            
-            if (savedCart) {
-                try {
-                    cart = JSON.parse(savedCart);
-                } catch (e) {
-                    console.error('Ошибка загрузки корзины:', e);
-                    cart = [];
-                }
-            }
-            
-            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-            const cartCountElement = document.getElementById('cartCount');
-            
-            if (cartCountElement) {
-                cartCountElement.textContent = totalItems;
                 
-                // Показываем или скрываем счетчик
-                if (totalItems > 0) {
-                    cartCountElement.style.display = 'flex';
-                } else {
-                    cartCountElement.style.display = 'none';
-                }
+            } catch (error) {
+                console.error('Ошибка при добавлении в корзину:', error);
+                // Показываем сообщение об ошибке
+                alert('Произошла ошибка при добавлении товара в корзину. Пожалуйста, попробуйте еще раз.');
             }
         }
         
@@ -785,8 +808,16 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Обновляем счетчик корзины при загрузке
             updateCartCounter();
+            
+            // Добавляем обработчик для кнопок "подробнее"
+            document.querySelectorAll('.card__button a[href="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Страница в разработке. Скоро здесь будет подробная информация о блюде.');
+                });
+            });
         });
     </script>
-    <script src="./assets/js/cart.js"></script>
+    <!-- Убрал ссылку на cart.js, так как вся логика теперь в этом файле -->
 </body>
 </html>
