@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>ОТЗЫВЫ</title>
+</head>
+<body>
+     @@include('../components/_header.html')
+    <div class="reviews-page">
+    <div class="reviews-container">
+        <div class="reviews-header">
+            <div class="reviews-main-title">ОТЗЫВЫ</div>
+            <div class="reviews-subtitle">ПОДЕЛИСЬ ВПЕЧАТЛЕНИЯМИ</div>
+        </div>
+
+        <div class="review-form-container">
+            <div class="review-form" id="reviewForm">
+                <div class="form-group">
+                    <div class="form-label">Имя *</div>
+                    <div class="form-input-wrapper">
+                        <input type="text" 
+                               id="name" 
+                               name="name" 
+                               class="form-input" 
+                               placeholder="Введите ваше имя" 
+                               required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Оценка *</div>
+                    <div class="rating-section">
+                        <div class="stars-container">
+                            <div class="star" data-rating="1">★</div>
+                            <div class="star" data-rating="2">★</div>
+                            <div class="star" data-rating="3">★</div>
+                            <div class="star" data-rating="4">★</div>
+                            <div class="star" data-rating="5">★</div>
+                        </div>
+                        <input type="hidden" id="rating" name="rating" value="0" required>
+                        <div class="rating-text" id="ratingText">Поставьте оценку</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Ваш отзыв *</div>
+                    <div class="form-textarea-wrapper">
+                        <textarea id="review" 
+                                  name="review" 
+                                  class="form-textarea" 
+                                  placeholder="Поделитесь своими впечатлениями о нашем ресторане..." 
+                                  rows="6" 
+                                  required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Фото блюда (необязательно)</div>
+                    <div class="photo-upload-section">
+                        <div class="upload-button-wrapper">
+                            <div class="upload-button" id="uploadButton">
+                                <div class="upload-icon">↑</div>
+                                <div class="upload-text">загрузить фото</div>
+                                <input type="file" 
+                                       id="photo" 
+                                       name="photo" 
+                                       accept="image/*" 
+                                       class="file-input">
+                            </div>
+                        </div>
+                        <div class="file-info" id="fileInfo">Файл не выбран</div>
+                    </div>
+                </div>
+
+                <div class="form-group form-submit-group">
+                    <div class="submit-button-wrapper">
+                        <div class="submit-button" id="submitButton">
+                            <div class="submit-icon">✉</div>
+                            <div class="submit-text">отправить отзыв</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../components/_footer.html')
+<script src="reviews-fixed.js"></script>
+</body>
+</html>

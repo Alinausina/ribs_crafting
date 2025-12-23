@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>КОНТАКТЫ</title>
+</head>
+<body>
+     @@include('../components/_header.html')
+    
+     <div class="contacts-container">
+        <h1 class="contacts-title">КОНТАКТЫ</h1>
+        
+        <div class="contacts-content">
+            <div class="contact-info">
+                <div class="contact-section">
+                    <img src="./assets/images/carta.webp" alt="Иконка адреса" class="contact-icon-img">
+                    <div class="contact-text-wrapper">
+                        <span class="contact-label">АДРЕС</span>
+                        <div class="contact-text-address">г. Нижний Новгород, ул. Ошарская, 9</div>
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <img src="./assets/images/telephon.webp" alt="Иконка телефона" class="contact-icon-img">
+                    <div class="contact-text-wrapper">
+                        <span class="contact-label">ТЕЛЕФОН</span>
+                        <div class="contact-text">+7 (910) 894-71-22</div>
+                    </div>
+                </div>
+                
+                <div class="contact-section">
+                    <img src="./assets/images/cloc.webp" alt="Иконка часов" class="contact-icon-img">
+                    <div class="contact-text-wrapper">
+                        <span class="contact-label">ВРЕМЯ РАБОТЫ</span>
+                        <div class="contact-text">Вс-Чт 12:00-00:00</div>
+                        <div class="contact-text">Пт-Сб 12:00-02:00</div>
+                    </div>
+                </div>
+                
+                <div class="contact-section social-section">
+                    <div class="contact-text-wrapper">
+                        <span class="contact-label">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</span>
+                        <div class="social-icons-container">
+                            <div class="social-icon-placeholder vk">
+                                <a href="https://vk.com/rebracraft" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/images/vk.webp" alt="VK" class="social-icon-img">
+                                </a>
+                            </div>
+
+                            <div class="social-icon-placeholder telegram">
+                                <a href="https://t.me/rebracraft" target="_blank" rel="noopener noreferrer">
+                                    <img src="./assets/images/tg.webp" alt="Telegram" class="social-icon-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div id="map" style="width: 100%; height: 500px; border-radius: 10px;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=34e2a2bb-a069-460c-b5fb-ae68ac89683a&lang=ru_RU"></script>
+
+    <div class="our-dishes-title">
+        <div class="container">
+            <div class="our-dishes-title__text">ОТЗЫВЫ</div>
+        </div>
+    </div>
+
+    <div class="otzivi-row">
+        @@include('../components/_otziv.html', {
+            "title": "Екатерина К.",
+            "data": "18 ноября",
+            "text": "Одно из наших любимых мест. Всё на твердую 5: еда, коктейли, атмосфера, обслуживание. Спасибо официанту Владиславу! Сделал нам вечер и настроение своим общением!!! Владислав, Вы просто профи"
+        })
+
+        @@include('../components/_otziv.html', {
+            "title": "Анастасия Б.",
+            "data": "20 января",
+            "text": "Ребра действительно вкусные, лучше, чем в frank by basta например. Другие блюда тоже достойные. Выбор пива имеется. Официанты дружелюбные все."
+        })
+
+        @@include('../components/_otziv.html', {
+            "title": "Мария Ф.",
+            "data": "05 марта",
+            "text": "Очень вкусно!!! Все блюда шикарные! Настойка с бузиной нас очаровала персонал замечательный. Очень всем довольны"
+        })
+
+    </div>
+
+    @@include('../components/_reservation.html')
+    @@include('../components/_footer.html')
+    
+    <script src="./assets/js/carta.js"></script>
+</body>
+</html>

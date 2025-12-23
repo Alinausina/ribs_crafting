@@ -1,0 +1,128 @@
+
+.small-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.small-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 20px 20px;
+    position: relative;
+    width: 160px; 
+    height: 140px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; 
+}
+
+.small-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.small-card__orange-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ED693B;
+    border-radius: 8px 8px 0 0;
+}
+
+.small-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.small-card__icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.small-card__img {
+    width: 138%;
+    height: 216%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    opacity: .7;
+    margin-left: -50px;
+}
+
+.small-card:hover .small-card__img {
+    opacity: 1;
+}
+
+.small-card__title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 38px;
+}
+
+@media (min-width: 1200px) {
+    .small-cards-grid {
+        gap: 25px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .small-cards-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .small-cards-grid {
+        gap: 20px;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .small-cards-grid {
+        gap: 15px;
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .small-cards-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .small-card {
+        width: 180px; 
+        height: 130px;
+    }
+}
+

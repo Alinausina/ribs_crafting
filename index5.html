@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>ОТЗЫВЫ</title>
+</head>
+<body>
+     <header class="header">
+    <div class="header-container">
+        <div class="logo-section">
+            <div class="logo-img">
+                <img src="./assets/images/logo.webp" style="width: 78px; height: 40px;" alt="Логотип Крафт Рёбра">
+            </div>
+            <div class="logo-text">
+                <span class="logo-part-white">КРАФТ</span>
+                <span class="logo-part-colored">РЁБРА</span>
+            </div>
+        </div>
+
+        <nav class="nav-section" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link">Главная</a></li>
+                <li><a href="./index2.html" class="nav-link">Меню</a></li>
+                <li><a href="./index3.html" class="nav-link">О нас</a></li>
+                <li><a href="./index4.html" class="nav-link">Контакты</a></li>
+                <li><a href="./index5.html" class="nav-link">Отзывы</a></li>
+                <li><a href="./index6.html" class="nav-link">События</a></li>
+                <li><a href="./index8.html" class="nav-link">Корзина</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </div>
+</header>
+
+<script src="./assets/js/menu.js"></script>
+    <div class="reviews-page">
+    <div class="reviews-container">
+        <div class="reviews-header">
+            <div class="reviews-main-title">ОТЗЫВЫ</div>
+            <div class="reviews-subtitle">ПОДЕЛИСЬ ВПЕЧАТЛЕНИЯМИ</div>
+        </div>
+
+        <div class="review-form-container">
+            <div class="review-form" id="reviewForm">
+                <div class="form-group">
+                    <div class="form-label">Имя *</div>
+                    <div class="form-input-wrapper">
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Введите ваше имя" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Оценка *</div>
+                    <div class="rating-section">
+                        <div class="stars-container">
+                            <div class="star" data-rating="1">★</div>
+                            <div class="star" data-rating="2">★</div>
+                            <div class="star" data-rating="3">★</div>
+                            <div class="star" data-rating="4">★</div>
+                            <div class="star" data-rating="5">★</div>
+                        </div>
+                        <input type="hidden" id="rating" name="rating" value="0" required>
+                        <div class="rating-text" id="ratingText">Поставьте оценку</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Ваш отзыв *</div>
+                    <div class="form-textarea-wrapper">
+                        <textarea id="review" name="review" class="form-textarea" placeholder="Поделитесь своими впечатлениями о нашем ресторане..." rows="6" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-label">Фото блюда (необязательно)</div>
+                    <div class="photo-upload-section">
+                        <div class="upload-button-wrapper">
+                            <div class="upload-button" id="uploadButton">
+                                <div class="upload-icon">↑</div>
+                                <div class="upload-text">загрузить фото</div>
+                                <input type="file" id="photo" name="photo" accept="image/*" class="file-input">
+                            </div>
+                        </div>
+                        <div class="file-info" id="fileInfo">Файл не выбран</div>
+                    </div>
+                </div>
+
+                <div class="form-group form-submit-group">
+                    <div class="submit-button-wrapper">
+                        <div class="submit-button" id="submitButton">
+                            <div class="submit-icon">✉</div>
+                            <div class="submit-text">отправить отзыв</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-top-strip"></div>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo-sectionn">
+                    <div class="cafe-logo">
+                        <div class="logo-circle">
+                            <img src="./assets/images/logo.webp">
+                        </div>
+                        <div class="cafe-name">КРАФТ РЁБРА</div>
+                    </div>
+                    <div class="cafe-description">
+                        Ароматные, тающие во рту рёбра и идеальные к ним авторские коктейли. Вкус, ради которого возвращаются.
+                    </div>
+                    <div class="social-icons">
+    <a href="https://t.me/rebracraft" title="Телеграм" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/tg.webp">
+    </a>
+    <a href="https://vk.com/rebracraft" title="ВКонтакте" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/images/vk.webp">
+    </a>
+</div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-column-title">Навигация</div>
+                <div class="footer-nav">
+                    <a href="./index.html" class="nav-link">Главная</a>
+                    <a href="./index2.html" class="nav-link">Меню</a>
+                    <a href="./index3.html" class="nav-link">О нас</a>
+                    <a href="./index4.html" class="nav-link">Контакты</a>
+                    <a href="./index5.html" class="nav-link">Отзывы</a>
+                    <a href="./index6.html" class="nav-link">События</a>
+                    <a href="./index7.html" class="nav-link">Фотогалерея</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <div class="footer-column-title">Контакты</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">г. Нижний Новгород, ул. Ошарская, 9</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">+7 (910) 894-71-22</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column-title">Режим работы</div>
+                <div class="working-hours">
+                    <div>Вс-Чт 12:00-00:00</div>
+                    <div>Пт-Сб 12:00-02:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="reviews-fixed.js"></script>
+</body>
+</html>

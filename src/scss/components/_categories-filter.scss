@@ -1,0 +1,145 @@
+.categories-filter {
+        background-color: #2C2C2C;
+        padding: 40px 0 30px;
+        z-index: 50;
+        border-bottom: 1px solid #333;
+        margin-bottom: 40px;
+        position: relative;
+        top: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .filter-title {
+        text-align: center;
+        margin-bottom: 35px;
+        font-family: 'Arial Black', 'Impact', sans-serif;
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .filter-title__white {
+        color: #ffffff;
+        font-weight: 900;
+        margin-right: 10px;
+    }
+
+    .filter-title__orange {
+        color: #ED693B;
+        font-weight: 900;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .filter-btn {
+        padding: 12px 24px;
+        background-color: transparent;
+        color: #cccccc;
+        border: 2px solid #333;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        border: none;
+        outline: none;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .filter-btn:hover {
+        color: #ED693B;
+        border-color: #ED693B;
+    }
+
+    .filter-btn.active {
+        background-color: #ED693B;
+        color: white;
+        border-color: #ED693B;
+    }
+
+    @media (max-width: 1200px) {
+        .filter-title {
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .filter-buttons {
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+        
+        .filter-title {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .categories-filter {
+            padding: 30px 0 20px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-buttons {
+            overflow-x: auto;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+            flex-wrap: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .filter-buttons::-webkit-scrollbar {
+            height: 4px;
+        }
+        
+        .filter-buttons::-webkit-scrollbar-track {
+            background: #333;
+        }
+        
+        .filter-buttons::-webkit-scrollbar-thumb {
+            background: #ED693B;
+        }
+        
+        .filter-title {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .filter-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        
+        .categories-filter {
+            padding: 25px 0 15px;
+        }
+        
+        .filter-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .filter-title {
+            font-size: 20px;
+        }
+    }

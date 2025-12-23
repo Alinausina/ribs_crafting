@@ -1,0 +1,52 @@
+
+<div class="product-detail">
+    <button class="back-button" onclick="window.history.back()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        назад
+    </button>
+    
+    <div class="product-content">
+        <div class="product-image">
+            <picture>
+                <source srcset="@@img-sm" media="(max-width: 480px)">
+                <source srcset="@@img-md" media="(max-width: 800px)">
+                <img src="@@img" alt="@@alt" class="product-img">
+            </picture>
+        </div>
+        
+        <div class="product-info">
+            <h1 class="product-title">
+                <span class="product-title-orange">БРАУНИ С ПОПКОРНОМ</span>
+                <span class="product-title-white">Соленой карамелью и шариком мороженого</span>
+            </h1>
+            
+            <div class="product-description">
+                <p>@@description</p>
+            </div>
+            
+            <div class="nutrition-info">
+                <div class="nutrition-label">на 100 г</div>
+                <div class="nutrition-values">
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">Б</span>
+                        <span class="nutrition-number">8</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">Ж</span>
+                        <span class="nutrition-number">28</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">У</span>
+                        <span class="nutrition-number">70</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">К</span>
+                        <span class="nutrition-number">520</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/product-detail.css">
+    <title>ПОДРОБНАЯ ИНФОРМАЦИЯ О БЛЮДЕ</title>
+
+</head>
+<body>
+     <header class="header">
+    <div class="header-container">
+        <div class="logo-section">
+            <div class="logo-img">
+                <img src="./assets/images/logo.webp" style="width: 78px; height: 40px;" alt="Логотип Крафт Рёбра">
+            </div>
+            <div class="logo-text">
+                <span class="logo-part-white">КРАФТ</span>
+                <span class="logo-part-colored">РЁБРА</span>
+            </div>
+        </div>
+
+        <nav class="nav-section" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link">Главная</a></li>
+                <li><a href="./index2.html" class="nav-link">Меню</a></li>
+                <li><a href="./index3.html" class="nav-link">О нас</a></li>
+                <li><a href="./index4.html" class="nav-link">Контакты</a></li>
+                <li><a href="./index5.html" class="nav-link">Отзывы</a></li>
+                <li><a href="./index6.html" class="nav-link">События</a></li>
+                <li><a href="./index8.html" class="nav-link">Корзина</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger-menu" id="burgerBtn" aria-label="Меню">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </div>
+</header>
+
+<script src="./assets/js/menu.js"></script>
+     
+     <div class="container">
+        
+<div class="product-detail">
+    <button class="back-button" onclick="window.history.back()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        назад
+    </button>
+    
+    <div class="product-content">
+        <div class="product-image">
+            <picture>
+                <source srcset="./assets/images/photoc1.webp" media="(max-width: 480px)">
+                <source srcset="./assets/images/photoc1.webp" media="(max-width: 800px)">
+                <img src="./assets/images/photoc1.webp" alt="Брауни с попкорном, соленой карамелью и мороженым" class="product-img">
+            </picture>
+        </div>
+        
+        <div class="product-info">
+            <h1 class="product-title">
+                <span class="product-title-orange">БРАУНИ С ПОПКОРНОМ</span>
+                <span class="product-title-white">Соленой карамелью и шариком мороженого</span>
+            </h1>
+            
+            <div class="product-description">
+                <p>Нежный шоколадный брауни с хрустящим попкорном, политый соленой карамелью и украшенный шариком ванильного мороженого. Идеальное сочетание текстур и вкусов - теплый шоколадный десерт с холодным мороженым создают неповторимую гармонию.</p>
+            </div>
+            
+            <div class="nutrition-info">
+                <div class="nutrition-label">на 100 г</div>
+                <div class="nutrition-values">
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">Б</span>
+                        <span class="nutrition-number">8</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">Ж</span>
+                        <span class="nutrition-number">28</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">У</span>
+                        <span class="nutrition-number">70</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="nutrition-letter">К</span>
+                        <span class="nutrition-number">520</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     </div>
+</body>
+</html>

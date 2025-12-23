@@ -1,0 +1,246 @@
+
+.product-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.product-content {
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.product-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.product-info {
+    flex: 1;
+    min-width: 0;
+    color: white;
+}
+
+.product-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.product-title-orange {
+    font-size: 2.5rem;
+    color: #ED693B;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product-title-white {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nutrition-info {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 15px;
+    padding: 4px;
+    max-width: 540px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.nutrition-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nutrition-values {
+    display: flex;
+    justify-content: space-evenly;
+    gap: -1px;
+}
+
+.nutrition-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.nutrition-letter {
+    font-size: 1.8rem;
+    color: #ED693B;
+    font-weight: 700;
+}
+
+.nutrition-number {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 900;
+}
+
+
+@media (max-width: 991px) {
+    .product-content {
+        gap: 40px;
+        flex-direction: column;
+    }
+    
+    .product-img {
+        height: 400px;
+    }
+    
+    .product-title-orange {
+        font-size: 2rem;
+    }
+    
+    .product-title-white {
+        font-size: 1.5rem;
+    }
+    
+    .product-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-detail {
+        padding: 15px;
+    }
+    
+    .back-button {
+        top: 15px;
+        left: 15px;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+    .product-content {
+        margin-top: 50px;
+        gap: 30px;
+    }
+    
+    .product-img {
+        height: 350px;
+    }
+    
+    .product-title-orange {
+        font-size: 1.8rem;
+    }
+    
+    .product-title-white {
+        font-size: 1.3rem;
+    }
+    
+    .product-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .nutrition-info {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .nutrition-values {
+        gap: 15px;
+    }
+    
+    .nutrition-letter {
+        font-size: 1.5rem;
+    }
+    
+    .nutrition-number {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .product-title-orange {
+        font-size: 1.6rem;
+    }
+    
+    .product-title-white {
+        font-size: 1.2rem;
+    }
+    
+    .product-img {
+        height: 300px;
+    }
+    
+    .nutrition-info {
+        padding: 15px;
+    }
+    
+    .nutrition-values {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nutrition-item {
+        flex: 0 0 calc(50% - 10px);
+        margin-bottom: 15px;
+    }
+    
+    .back-button {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+    
+    .back-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
